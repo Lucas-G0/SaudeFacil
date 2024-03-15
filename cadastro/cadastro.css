@@ -1,0 +1,72 @@
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family:sans-serif;
+    color: rgba(0, 0, 0, 0.751);
+    font-size: small;
+    background-color: rgba(236, 232, 232, 0.799);
+}
+input{
+    border: 0,5px solid black;
+    width:300px;
+    height: 19px;
+}
+header{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: 3em;
+    padding: 15px;
+}
+#nome h4{
+    text-align: left;
+    padding: 2px;
+    margin-bottom: 0;
+}
+#email h4{
+    text-align: left;
+    padding: 2px;
+    margin-bottom: 0;
+}
+#data-nascimento h4{
+    text-align: left;
+    padding: 2px;
+    margin-bottom: 0;
+}
+#telefone h4{
+    text-align: left;
+    padding: 2px;
+    margin-bottom: 0;
+}
+#mark_box{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+#mark_box input{
+    width: 13px;
+    margin-bottom: 0;
+}
+#aceite{
+    text-align: left;
+    margin-top: 0;
+}
+#cadastro{
+    text-align: center;
+    display: flex;
+}
+#cadastro a{
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(62, 124, 247);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 30px;
+    width: 300px;
+}
+#cadastro a:hover{
+    background-color: blue;
+}
