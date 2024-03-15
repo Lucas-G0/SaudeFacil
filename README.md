@@ -1,2 +1,2 @@
 # SaudeFacil
-projeto de aplicativo
+projeto de web site
