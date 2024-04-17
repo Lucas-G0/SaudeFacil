@@ -6,16 +6,16 @@ body{
 
 .color1{
     background-color: #529DE4;
-    height: 100vh;
+    height: 25%;
 
 }
 .color2{
     background-color: #FFFAF0;
-    height: 528px;
+    height: 50%;
 }
 .color3{
     background-color: #152330;
-    height: 87px;
+    height: 25%;
 }
 .menu{
     display: flex;
