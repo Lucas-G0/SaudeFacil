@@ -54,7 +54,7 @@ body{
 .boxes{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1vh;
+    gap: 1px;
 }
 .text{
     color: white;
