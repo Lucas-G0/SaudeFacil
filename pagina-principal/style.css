@@ -6,7 +6,7 @@ body{
 
 .color1{
     background-color: #529DE4;
-    height: 25vh;
+    height: 15vh;
 
 }
 .color2{
@@ -15,7 +15,7 @@ body{
 }
 .color3{
     background-color: #152330;
-    height: 25%;
+    height: 15vh;
 }
 .menu{
     display: flex;
