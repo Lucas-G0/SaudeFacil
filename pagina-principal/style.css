@@ -1,7 +1,7 @@
 body{
     width: device-width;
     margin: 0;
-    height: auto;
+    height: device-height;
 }
 
 .color1{
