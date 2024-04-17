@@ -2,6 +2,7 @@ body{
     width: device-width;
     margin: 0;
     height: device-height;
+    box-sizing: content-box;
 }
 
 .color1{
