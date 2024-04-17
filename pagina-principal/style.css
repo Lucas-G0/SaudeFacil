@@ -64,8 +64,7 @@ body{
     justify-content: center;
 }
 .text p{
-    margin: 70px 0 0 0;
-    text-align: center;
+    alig-itens: end;
 }
 .align{
     justify-content: center;
