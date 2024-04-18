@@ -1,22 +1,26 @@
 body{
-    width: device-width;
     margin: 0;
-    height: device-height;
-    box-sizing: content-box;
+}
+
+.background{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
 }
 
 .color1{
     background-color: #529DE4;
-    height: 16vh;
-
+    height: 20%;
 }
 .color2{
     background-color: #FFFAF0;
-    height: 64vh;
+    height: 70%;
 }
 .color3{
     background-color: #152330;
-    height: 15vh;
+    height: 10%;
 }
 .menu{
     display: flex;
@@ -44,17 +48,18 @@ body{
     background-color: #1B558B;
     box-sizing: border-box;
     justify-content: center;
-    width: 16vh;
+    width: 26vh;
     height: 15vh;
     border-radius: 20px;
     position: relative;
     top: -50px;
-    margin: 5px 0;
 }
 .boxes{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
+    gap: 10px;
+    width: 50%;
+    height: 60%;
 }
 .text{
     color: white;
@@ -65,17 +70,9 @@ body{
     align-items: end;
 }
 .text p{
-    alig-items: end;
+    align-items: end;
 }
 .align{
-    justify-content: center;
     display: flex;
-}
-.box1,
-.box3{
-    margin-left: 5px;
-}
-.box2,
-.box4{
-    margin-right: 5px;
+    justify-content: space-around;
 }
