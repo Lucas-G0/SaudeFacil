@@ -98,6 +98,24 @@ a{
 .cabecalho-header{
     justify-content: space-around;
 }
+
+.menus-container{
+    display: flex;
+    justify-content: center;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    justify-items: center;
+}
+.box{
+    width: 35vw;
+    height: 30vh;
+    background-color: #1B558B;
+    margin: 15px;
+    border-radius: 15%;
+}
 @media only screen and (max-width: 717px){
     header{
         background-color: #529DE4;
@@ -118,6 +136,10 @@ a{
     .icon-menu{
         height: 5vh;
         width: 5vw;
+    }
+    .box{
+        width: 38vw;
+        height: 23vh;
     }
     #openMenu, #closeMenu{
         display: block;
