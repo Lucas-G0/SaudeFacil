@@ -8,53 +8,38 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
     </style>
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height,initial-scale=1.0"
+    />
   </head>
   <body>
-    <div class="background">
-      <header class="color1">
-        <div class="menu">
-          <div class="logo">
-            <img src="logo.svg" alt="logo" />
-          </div>
-          <div class="barra-lateral">
-            <img src="barra-lateral.svg" alt="barra-lateral" />
-          </div>
+    <header class="cabecalho">
+      <div class="cabecalho-container">
+        <div class="logo-container">
+          <a href="#"><img src="logo.svg" alt="logo" id="logo" /></a>
         </div>
-      </header>
-      <section class="color2">
-        <div class="boxes">
-          <div class="align">
-            <div class="box box1">
-              <div class="text">
-                <p>Teste</p>
-              </div>
-            </div>
-          </div>
-          <div class="align">
-            <div class="box box2">
-              <div class="text">
-                <p>Teste</p>
-              </div>
-            </div>
-          </div>
-          <div class="align">
-            <div class="box box3">
-              <div class="text">
-                <p>Teste</p>
-              </div>
-            </div>
-          </div>
-          <div class="align">
-            <div class="box box4">
-              <div class="text">
-                <p>Teste</p>
-              </div>
-            </div>
-          </div>
+
+        <div class="menu-container">
+          <button id="openMenu"><p class="icon-menu">&#9776;</p></button>
         </div>
-      </section>
-      <footer class="color3">.</footer>
-    </div>
+      </div>
+    </header>
+
+    <nav id="menu">
+      <button id="closeMenu">X</button>
+
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <main class="conteudo">
+      <div class="menus-container">.</div>
+    </main>
+
+    <footer class="rodape">.</footer>
   </body>
+  <script src="script.js"></script>
 </html>

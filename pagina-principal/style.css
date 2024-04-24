@@ -1,78 +1,143 @@
-body{
+@charset "UTF-8";
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.background{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
 }
 
-.color1{
+header{
     background-color: #529DE4;
-    height: 20%;
+    height: 10vh;
 }
-.color2{
+main{
     background-color: #FFFAF0;
-    height: 70%;
+    height: 75vh;
 }
-.color3{
+nav{
+    background-color: #FFFAF0;
+    height: 5vh;
+}
+footer{
     background-color: #152330;
-    height: 10%;
+    height: 10vh;
 }
-.menu{
+
+header, 
+main, 
+footer,
+nav,
+div{
     display: flex;
-    justify-content:space-between;
-    padding: 15px 0 30px 0;
+    flex: 1 1 100vw;
 }
-.logo,
-.barra-lateral{
+
+header #logo{
     display: flex;
+    flex: 0 1 200px;
     justify-content: center;
+    align-items: center;
 }
-.logo{
-    margin-left: 30px;
+
+.logo-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
-.logo img{
-    width: 70px;
+
+.menu-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
-.barra-lateral{
-    margin-right: 30px;
-}
-.barra-lateral img{
-    width: 30px;
-}
-.box{
-    background-color: #1B558B;
-    box-sizing: border-box;
-    justify-content: center;
-    width: 26vh;
-    height: 15vh;
-    border-radius: 20px;
-    position: relative;
-    top: -50px;
-}
-.boxes{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    width: 50%;
-    height: 60%;
-}
-.text{
+
+.icon-menu{
     color: white;
-    font-family: 'League Spartan';
-    font-size: 3rem;
-    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+#logo{
+    width: 10vh;
+    height: 10vh;
+    margin-left: 20px;
+}
+
+#openMenu,
+#closeMenu{
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
-.text p{
-    align-items: end;
+
+nav a{
+    margin: 0 3%;
+    font-size: 15pt;
 }
-.align{
-    display: flex;
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabecalho-header{
     justify-content: space-around;
+}
+@media only screen and (max-width: 717px){
+    header{
+        background-color: #529DE4;
+        height: 15vh;
+    }
+    main{
+        background-color: #FFFAF0;
+        height: 75vh;
+    }
+    footer{
+        background-color: #152330;
+        height: 10vh;
+    }
+    #logo{
+        width: 15vh;
+        height: 15vh;
+    }
+    #openMenu, #closeMenu{
+        display: block;
+    }
+    #openMenu{
+        margin-left: auto;
+    }
+    #closeMenu{
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+    nav{
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    nav a{
+        margin: 3%;
+    }
 }
