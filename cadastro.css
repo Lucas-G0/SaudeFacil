@@ -1,0 +1,92 @@
+:root {
+    --branco-fundo: #ece8e8cc;
+    --fonte-principal: 'Poppins'; 
+    --sombra: #0000002a;
+    --tamanho-font: 15px;
+}
+
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-principal);
+    color: rgba(0, 0, 0, 0.751);
+    font-size: var(--tamanho-font);
+    background-color: var(--branco-fundo);
+}
+
+#title h2{
+    margin-top: 10px;
+}
+
+input{
+    border: 0.5px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+    height: 19px;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+}
+
+header{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: 3em;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px var(--sombra);
+}
+
+.input_cadastro h4{
+    text-align: left;
+    padding: 2px;
+    margin-bottom: 0; 
+}
+
+#mark_box{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+#mark_box a {
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+#mark_box input{
+    width: 13px;
+    margin-bottom: 0;
+}
+
+#opc_login p {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+#aceite{
+    text-align: left;
+    margin-top: 0;
+}
+#cadastro{
+    text-align: center;
+    display: flex;
+}
+#cadastro a{
+    text-decoration: none;
+    text-align: center;
+    background-color: #3e7cf7;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 15px;
+    width: 300px;
+}
+#cadastro a:hover{
+    background-color: blue;
+}
