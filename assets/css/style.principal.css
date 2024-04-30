@@ -16,12 +16,13 @@ header{
     background-color: #529DE4;
     height: 10vh;
 }
-main{
+.conteudo{
     background-color: #FFFAF0;
-    height: 75vh;
+    height: 80vh;
+    display: block;
 }
 nav{
-    background-color: #FFFAF0;
+    color: #FFFAF0;
     height: 5vh;
 }
 footer{
@@ -48,13 +49,18 @@ header #logo{
 
 .logo-container{
     display: flex;
-    justify-content: start;
     align-items: center;
+    justify-content: center;
+    flex: 1 2 80vw;
 }
 
 .menu-container{
     display: flex;
     justify-content: end;
+    align-items: center;
+}
+
+.nav-container{
     align-items: center;
 }
 
@@ -66,7 +72,6 @@ header #logo{
 #logo{
     width: 10vh;
     height: 10vh;
-    margin-left: 20px;
 }
 
 #openMenu,
@@ -78,6 +83,18 @@ header #logo{
     padding: 0 5px 0 5px;
     cursor: pointer;
     display: none;
+}
+
+img{
+    width: 100%;
+    height: 30vh;
+}
+
+.item {
+    display: none;
+}
+.active{
+    display: inline;
 }
 
 nav{
@@ -99,24 +116,63 @@ a{
     justify-content: space-around;
 }
 
-.menus-container{
-    display: flex;
+.menu-container{
+    display: none;
+}
+
+.botoes-container{
+    position: relative;
+    top: -70px;
+    display: grid;
+    height: min-content;
     justify-content: center;
+}
+
+#menu{
+    align-items: center;
+    justify-content: center;
+}
+
+.box-container{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.banner-container{
+    height: min-content;
 }
 .boxes{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    justify-items: center;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
 }
 .box{
-    width: 35vw;
-    height: 30vh;
+    width: 130px;
+    height: 140px;
     background-color: #1B558B;
-    margin: 15px;
+    opacity: 95%;
     border-radius: 15%;
+    justify-content: center;
 }
+.titulo{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 15px;
+    font-size: 3vh;
+}
+
+
 @media only screen and (max-width: 717px){
+    .menu-container{
+        display: flex;
+        justify-content: center;
+    }
     header{
         background-color: #529DE4;
         height: 15vh;
@@ -136,6 +192,12 @@ a{
     .icon-menu{
         height: 5vh;
         width: 5vw;
+    }
+    .nav-container{
+        display: none;
+    }
+    .boxes{
+        grid-template-columns: repeat(2, 1fr);
     }
     .box{
         width: 38vw;

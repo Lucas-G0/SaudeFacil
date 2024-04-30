@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.principal.css">
+    <link rel="stylesheet" href="assets/css/style.principal.css" />
     <title>SaudeFacil</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
@@ -17,7 +17,20 @@
     <header class="cabecalho">
       <div class="cabecalho-container">
         <div class="logo-container">
-          <a href="#"><img src="/assets/images/logo.svg" alt="logo" id="logo" /></a>
+          <a href="#"
+            ><img src="/assets/images/logo.svg" alt="logo" id="logo" />
+          </a>
+        </div>
+
+        <div class="nav-container">
+          <nav id="menu">
+            <button id="closeMenu">X</button>
+
+            <a href="screens/cadastro.html">Cadastro</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+          </nav>
         </div>
 
         <div class="menu-container">
@@ -26,23 +39,48 @@
       </div>
     </header>
 
-    <nav id="menu">
-      <button id="closeMenu">X</button>
-
-      <a href="screens/cadastro.html">Cadastro</a>
-      <a href="#">About</a>
-      <a href="#">Products</a>
-      <a href="#">Contact</a>
-    </nav>
-
     <main class="conteudo">
-      <div class="menus-container">
-        <div class="boxes">
-          <div class="box box1">.</div>
-          <div class="box box2">.</div>
-          <div class="box box3">.</div>
-          <div class="box box4">.</div>
+      <div class="banner-container">
+        <div id="item active">
+          <img
+            src="assets/images/banners/banner_teste.jpeg"
+            alt="banner"
+            id="banner"
+          />
+          <p id="banner-next">></p>
         </div>
+        <div class="item">
+          <img
+            src="assets/images/banners/banner_teste2.jpeg"
+            alt="banner"
+            id="banner"
+          />
+        </div>
+      </div>
+
+      <div class="botoes-container">
+        <ul class="boxes">
+          <li class="box-container">
+            <div class="box">
+              <a href="#" class="titulo"><p class="titulo">teste</p></a>
+            </div>
+          </li>
+          <li class="box-container">
+            <div class="box">
+              <a href="#" class="titulo"><p class="titulo">teste</p></a>
+            </div>
+          </li>
+          <li class="box-container">
+            <div class="box">
+              <a href="#" class="titulo"><p class="titulo">teste</p></a>
+            </div>
+          </li>
+          <li class="box-container">
+            <div class="box">
+              <a href="#" class="titulo"><p class="titulo">teste</p></a>
+            </div>
+          </li>
+        </ul>
       </div>
     </main>
 
