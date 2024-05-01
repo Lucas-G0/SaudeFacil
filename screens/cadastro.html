@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Cadastre-se</title>
-    <link rel="stylesheet" href="/assets/css/style.cadastro.css">
+    <link rel="stylesheet" href="/assets/css/cadastro.css">
 </head>
 <body>
     <header>
@@ -12,27 +15,27 @@
         <h2>Cadastro</h2>
     </div>
 
-    <div id="nome">
+    <div id="nome" class="input_cadastro">
         <h4>Nome Completo:</h4>
         <input type="text" id="nome" required>
     </div>
 
-    <div id="data-nascimento">
+    <div id="data-nascimento" class="input_cadastro">
         <h4>Data de Nascimento</h4>
         <input type="date" id="data-nascimento" placeholder="dd/mm/aaaa" required>
     </div>
 
-    <div id="email">
+    <div id="email" class="input_cadastro">
         <h4>Endereço de Email:</h4>
         <input type="email" id="email" placeholder="email@email.com" required>
     </div>
 
-    <div id="telefone">
+    <div id="telefone" class="input_cadastro">
         <h4>Telefone:</h4>
         <input type="number" placeholder="(99) 99999-9999" id="telefone" required>
     </div>
 
-    <div id="mark_box">
+    <div id="mark_box" class="input_cadastro">
         <input type="checkbox">
         <a>Aceito os termos e condições</a>
     </div>
@@ -40,7 +43,10 @@
     <div id="cadastro">
         <a href="#">Cadastrar-se</a>
     </div>
+    
+    <div id="opc_login">
+        <p>Já possui cadastro? <a href="#">Fazer Login</a></p>
+    </div>
     </header>
 </body>
-<script src="/assets/js/script.cadastro.js"></script>
 </html>
