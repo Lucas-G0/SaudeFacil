@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+:root {
+    --branco-fundo: #ece8e8cc;
+    --fonte-principal: 'Poppins'; 
+    --sombra: #0000002a;
+    --tamanho-font: 15px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +17,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 100vw;
+    font-family: var(--fonte-principal);
 }
 
 header{

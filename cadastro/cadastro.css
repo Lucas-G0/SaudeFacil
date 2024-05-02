@@ -1,54 +1,115 @@
+:root {
+    --fonte-principal: 'Poppins'; 
+    --sombra: #0000002a;
+    --tamanho-font: 15px;
+    --cor-logo: #0088ff;
+}
+
+@media screen and (max-width: 412px) {
+    .logo-cadastro img {
+        width: 60%;  
+    }
+
+    header {
+        background-color: white;
+        box-shadow: 0px;
+        text-align: center;
+    }
+
+    .subtitulo {
+        color: var(--cor-logo);
+    }
+
+    input {
+        border: 0 none;
+        border-bottom: 1.5px solid rgba(0, 0, 0, 0.26);
+        outline: none;
+        margin-top: 30px;
+    }
+
+    .container-opc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .container-opc p{
+        font-size: 11px;
+        font-weight: bolder;
+    }
+
+    .opc {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--cor-logo);
+    }
+}
+
 body{
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family:sans-serif;
+    font-family: var(--fonte-principal);
     color: rgba(0, 0, 0, 0.751);
-    font-size: small;
-    background-color: rgba(236, 232, 232, 0.799);
-}
-input{
-    border: 0,5px solid black;
-    width:300px;
-    height: 19px;
-}
-header{
+    font-size: var(--tamanho-font);
     background-color: white;
+}
+
+#title h2{
+    margin-top: 10px;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+    height: 19px;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+}
+
+header{
     width: fit-content;
     height: fit-content;
     text-align: center;
     margin: 3em;
-    padding: 15px;
+    padding: 20px;
+    border-radius: 10px;
 }
-#nome h4{
+
+.input_cadastro h4{
     text-align: left;
     padding: 2px;
-    margin-bottom: 0;
+    margin-bottom: 0; 
 }
-#email h4{
-    text-align: left;
-    padding: 2px;
-    margin-bottom: 0;
-}
-#data-nascimento h4{
-    text-align: left;
-    padding: 2px;
-    margin-bottom: 0;
-}
-#telefone h4{
-    text-align: left;
-    padding: 2px;
-    margin-bottom: 0;
-}
+
 #mark_box{
     text-align: left;
-    margin-top: 15px;
-    margin-bottom: 0;
+    display: flex;
+    align-items: flex-end;
 }
+
+#mark_box p {
+    margin-bottom: 2px;
+    margin-left: 6px;
+}
+
 #mark_box input{
     width: 13px;
-    margin-bottom: 0;
 }
+
+#opc_login p {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
 #aceite{
     text-align: left;
     margin-top: 0;
@@ -60,13 +121,13 @@ header{
 #cadastro a{
     text-decoration: none;
     text-align: center;
-    background-color: rgb(62, 124, 247);
+    background-color: var(--cor-logo);
     color: white;
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 30px;
+    border-radius: 15px;
+    padding: 8px;
+    margin-top: 15px;
     width: 300px;
 }
-#cadastro a:hover{
-    background-color: blue;
+#cadastro a:active{
+    background-color: rgb(24, 99, 160);
 }
