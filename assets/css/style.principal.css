@@ -191,7 +191,13 @@ a{
         display: flex;
         justify-content: center;
     }
+    .botoes-container{
+        top: 20px;
+    }
     .banner-container{
+        display: none;
+    }
+    .banner-buttons{
         display: none;
     }
     header{
@@ -214,9 +220,6 @@ a{
         height: 5vh;
         width: 5vw;
     }
-    .nav-container{
-        display: none;
-    }
     .boxes{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -235,7 +238,11 @@ a{
         right: 15px;
         top: 15px;
     }
-    nav{
+    #menu{
+        top: 0;
+        background-color: #fefefe;
+        color: black;
+        z-index: 1;
         position: fixed;
         flex-direction: column;
         width: 100vw;
