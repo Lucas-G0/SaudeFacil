@@ -174,7 +174,9 @@ header{
 
     #logo{
         width: calc(0.5*var(--max-width-web));
-        height: var(--max-height-web)
+        height: var(--max-height-web);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 
     #opc_login p{
