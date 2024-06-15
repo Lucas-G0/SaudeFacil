@@ -21,16 +21,13 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 100vw;
-<<<<<<< HEAD:pagina-principal/style.css
     font-family: var(--fonte-principal);
-=======
     text-align: center;
     justify-content: center;
     font-family: var(--fonte-principal);
     color: rgba(0, 0, 0, 0.751);
     font-size: var(--tamanho-font);
     background-color: var(--branco-fundo);
->>>>>>> 1dfff09d9b209c4368769591110a2ae30312d5f0:assets/css/style.principal.css
 }
 
 header{
@@ -38,9 +35,9 @@ header{
     height: 10vh;
 }
 .conteudo{
-    background-color: #FFFAF0;
     height: 80vh;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 nav{
     color: #FFFAF0;
@@ -142,11 +139,16 @@ a{
 }
 
 .botoes-container{
-    position: relative;
-    top: -70px;
     display: grid;
     height: min-content;
     justify-content: center;
+    margin: 5rem 0;
+}
+
+.background{
+    background-image: url('../images/banners/jars-1853439.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #menu{
@@ -183,27 +185,31 @@ a{
 
 .boxes{
     display: grid;
-    gap: 30px;
+    gap: 5rem;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: space-between;
     list-style-type: none;
-    text-decoration: none;
 }
 .box{
-    width: 130px;
-    height: 140px;
+    width: fit-content;
+    height: 5rem;
     background-color: #1B558B;
     opacity: 95%;
-    border-radius: 15%;
+    border-radius: 15px;
     justify-content: center;
 }
+
+.box:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .titulo{
     display: flex;
     color: white;
     justify-content: center;
-    align-items: end;
-    margin-bottom: 15px;
-    font-size: var(--tamanho-fonte);
+    align-items: center;
+      font-size: var(--tamanho-fonte);
+      margin: 0.5rem;
 }
 
 
