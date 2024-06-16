@@ -47,6 +47,7 @@ function create() {
         alert("Já existe um usuário com esse e-mail")
         window.location.replace('login.html');
       } else {
+        alert("Cadastro realizado com sucesso!")
         users.push({nome, data, email, telefone, senha});
       }
       salvar()
